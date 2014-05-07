@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="labelKodePerusahaan" max="32767" attributes="0"/>
+                          <Component id="labelAlamat" alignment="1" max="32767" attributes="0"/>
+                          <Component id="labelNamaPerusahaan" max="32767" attributes="0"/>
+                          <Component id="labelKota" alignment="0" max="32767" attributes="0"/>
+                          <Component id="labelNomorTelp" alignment="0" max="32767" attributes="0"/>
+                          <Component id="labelSumberData" alignment="0" max="32767" attributes="0"/>
+                          <Component id="labelJenisUsaha" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="textNamaPerusahaan" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="comboSumberData" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="textKodePerusahaan" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
+                                  <Component id="textKota" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="textNomorTelp" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="comboJenisUsaha" pref="132" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="labelKodePos" max="32767" attributes="0"/>
+                                          <Component id="labelNomorFax" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="textKodePos" max="32767" attributes="0"/>
+                                          <Component id="textNomorFax" pref="137" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="textSumberData" max="32767" attributes="0"/>
+                                  <Component id="textJenisUsaha" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="buttonSave" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="buttonCancel" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="labelKodePerusahaan" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="textKodePerusahaan" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="labelNamaPerusahaan" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="textNamaPerusahaan" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="labelAlamat" min="-2" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="labelKota" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="textKota" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="labelKodePos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="textKodePos" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="labelNomorTelp" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="textNomorTelp" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="labelNomorFax" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="textNomorFax" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="labelSumberData" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="comboSumberData" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="textSumberData" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="labelJenisUsaha" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="textJenisUsaha" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="comboJenisUsaha" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="buttonCancel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="buttonSave" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="labelKodePerusahaan">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Kode Perusahaan :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="labelNamaPerusahaan">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nama Perusahaan :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="labelAlamat">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Alamat Perusahaan :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="labelKota">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Kota :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="labelNomorTelp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nomor Telp. :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="labelSumberData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sumber Data :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="labelJenisUsaha">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Jenis Usaha :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="labelKodePos">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Kode Pos :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="labelNomorFax">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nomor Fax :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="textKodePerusahaan">
+    </Component>
+    <Component class="javax.swing.JTextField" name="textNamaPerusahaan">
+    </Component>
+    <Component class="javax.swing.JTextField" name="textKota">
+    </Component>
+    <Component class="javax.swing.JTextField" name="textNomorTelp">
+    </Component>
+    <Component class="javax.swing.JTextField" name="textKodePos">
+    </Component>
+    <Component class="javax.swing.JTextField" name="textNomorFax">
+    </Component>
+    <Component class="javax.swing.JTextField" name="textSumberData">
+    </Component>
+    <Component class="javax.swing.JTextField" name="textJenisUsaha">
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="textAreaAlamat">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JComboBox" name="comboSumberData">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Peserta"/>
+            <StringItem index="1" value="Koran"/>
+            <StringItem index="2" value="Iklan"/>
+            <StringItem index="3" value="Internet"/>
+          </StringArray>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="comboJenisUsaha">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Oil &amp; Gas"/>
+            <StringItem index="1" value="Bank"/>
+            <StringItem index="2" value="Asuransi"/>
+            <StringItem index="3" value="Ritel"/>
+          </StringArray>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="buttonCancel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cancel"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="buttonSave">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Save"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
