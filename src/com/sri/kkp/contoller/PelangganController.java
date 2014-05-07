@@ -47,6 +47,10 @@ public class PelangganController {
             }
         }
     }
+    
+    public void cancel(PanelPelanggan panelPelanggan){
+        reset(panelPelanggan);
+    }
 
     private void reset(PanelPelanggan panelPelanggan) {
         panelPelanggan.getTextKodePegawai().setText("");

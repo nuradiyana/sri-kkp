@@ -8,13 +8,15 @@ public class Perusahaan {
     private String kodepos;
     private String nomorTelp;
     private String nomorFax;
-    private String sumberInfo;
-    private String jenisUsaha;
-
+    private String sumberInfo1;
+    private String jenisUsaha1;
+    private String sumberInfo2;
+    private String jenisUsaha2;
+    
     public Perusahaan() {
     }
 
-    public Perusahaan(String kodePerusahaan, String namaPerusahaan, String alamat, String kota, String kodepos, String nomorTelp, String nomorFax, String sumberInfo, String jenisUsaha) {
+    public Perusahaan(String kodePerusahaan, String namaPerusahaan, String alamat, String kota, String kodepos, String nomorTelp, String nomorFax, String sumberInfo1, String jenisUsaha1, String sumberInfo2, String jenisUsaha2) {
         this.kodePerusahaan = kodePerusahaan;
         this.namaPerusahaan = namaPerusahaan;
         this.alamat = alamat;
@@ -22,8 +24,42 @@ public class Perusahaan {
         this.kodepos = kodepos;
         this.nomorTelp = nomorTelp;
         this.nomorFax = nomorFax;
-        this.sumberInfo = sumberInfo;
-        this.jenisUsaha = jenisUsaha;
+        this.sumberInfo1 = sumberInfo1;
+        this.jenisUsaha1 = jenisUsaha1;
+        this.sumberInfo2 = sumberInfo2;
+        this.jenisUsaha2 = jenisUsaha2;
+    }
+
+    public String getSumberInfo1() {
+        return sumberInfo1;
+    }
+
+    public void setSumberInfo1(String sumberInfo1) {
+        this.sumberInfo1 = sumberInfo1;
+    }
+
+    public String getJenisUsaha1() {
+        return jenisUsaha1;
+    }
+
+    public void setJenisUsaha1(String jenisUsaha1) {
+        this.jenisUsaha1 = jenisUsaha1;
+    }
+
+    public String getSumberInfo2() {
+        return sumberInfo2;
+    }
+
+    public void setSumberInfo2(String sumberInfo2) {
+        this.sumberInfo2 = sumberInfo2;
+    }
+
+    public String getJenisUsaha2() {
+        return jenisUsaha2;
+    }
+
+    public void setJenisUsaha2(String jenisUsaha2) {
+        this.jenisUsaha2 = jenisUsaha2;
     }
 
     public int getId() {
@@ -88,21 +124,5 @@ public class Perusahaan {
 
     public void setNomorFax(String nomorFax) {
         this.nomorFax = nomorFax;
-    }
-
-    public String getSumberInfo() {
-        return sumberInfo;
-    }
-
-    public void setSumberInfo(String sumberInfo) {
-        this.sumberInfo = sumberInfo;
-    }
-
-    public String getJenisUsaha() {
-        return jenisUsaha;
-    }
-
-    public void setJenisUsaha(String jenisUsaha) {
-        this.jenisUsaha = jenisUsaha;
     }
 }

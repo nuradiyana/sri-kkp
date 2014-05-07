@@ -100,6 +100,11 @@ public class PanelPelanggan extends javax.swing.JPanel {
         });
 
         buttonCancel.setText("Cancel");
+        buttonCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonCancelActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -163,6 +168,11 @@ public class PanelPelanggan extends javax.swing.JPanel {
         // TODO add your handling code here:
         controller.inputPelanggan(this);
     }//GEN-LAST:event_buttonSaveActionPerformed
+
+    private void buttonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCancelActionPerformed
+        // TODO add your handling code here:
+        controller.cancel(this);
+    }//GEN-LAST:event_buttonCancelActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

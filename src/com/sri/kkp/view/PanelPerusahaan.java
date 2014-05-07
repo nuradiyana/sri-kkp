@@ -6,18 +6,78 @@
 
 package com.sri.kkp.view;
 
+import com.sri.kkp.contoller.PerusahaanController;
+import javax.swing.JComboBox;
+import javax.swing.JFormattedTextField;
+import javax.swing.JLabel;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
 /**
  *
  * @author KNO1300457
  */
 public class PanelPerusahaan extends javax.swing.JPanel {
 
+    private PerusahaanController controller;
+    
     /**
      * Creates new form PanelPerusahaan
      */
     public PanelPerusahaan() {
         initComponents();
+        controller = new PerusahaanController();
     }
+
+    public JComboBox getComboJenisUsaha() {
+        return comboJenisUsaha;
+    }
+
+    public JComboBox getComboSumberData() {
+        return comboSumberData;
+    }
+
+    public JLabel getLabelSumberData() {
+        return labelSumberData;
+    }
+
+    public JTextArea getTextAreaAlamat() {
+        return textAreaAlamat;
+    }
+
+    public JTextField getTextJenisUsaha() {
+        return textJenisUsaha;
+    }
+
+    public JTextField getTextKodePerusahaan() {
+        return textKodePerusahaan;
+    }
+
+    public JTextField getTextKodePos() {
+        return textKodePos;
+    }
+
+    public JTextField getTextKota() {
+        return textKota;
+    }
+
+    public JTextField getTextNamaPerusahaan() {
+        return textNamaPerusahaan;
+    }
+
+    public JFormattedTextField getTextNomorFax() {
+        return textNomorFax;
+    }
+
+    public JFormattedTextField getTextNomorTelp() {
+        return textNomorTelp;
+    }
+
+    public JTextField getTextSumberData() {
+        return textSumberData;
+    }
+
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -40,9 +100,7 @@ public class PanelPerusahaan extends javax.swing.JPanel {
         textKodePerusahaan = new javax.swing.JTextField();
         textNamaPerusahaan = new javax.swing.JTextField();
         textKota = new javax.swing.JTextField();
-        textNomorTelp = new javax.swing.JTextField();
         textKodePos = new javax.swing.JTextField();
-        textNomorFax = new javax.swing.JTextField();
         textSumberData = new javax.swing.JTextField();
         textJenisUsaha = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -51,6 +109,8 @@ public class PanelPerusahaan extends javax.swing.JPanel {
         comboJenisUsaha = new javax.swing.JComboBox();
         buttonCancel = new javax.swing.JButton();
         buttonSave = new javax.swing.JButton();
+        textNomorFax = new javax.swing.JFormattedTextField();
+        textNomorTelp = new javax.swing.JFormattedTextField();
 
         labelKodePerusahaan.setText("Kode Perusahaan :");
 
@@ -79,8 +139,22 @@ public class PanelPerusahaan extends javax.swing.JPanel {
         comboJenisUsaha.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Oil & Gas", "Bank", "Asuransi", "Ritel" }));
 
         buttonCancel.setText("Cancel");
+        buttonCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonCancelActionPerformed(evt);
+            }
+        });
 
         buttonSave.setText("Save");
+        buttonSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSaveActionPerformed(evt);
+            }
+        });
+
+        textNomorFax.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+
+        textNomorTelp.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -107,8 +181,8 @@ public class PanelPerusahaan extends javax.swing.JPanel {
                                     .addComponent(comboSumberData, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(textKodePerusahaan, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(textKota, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(textNomorTelp, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(comboJenisUsaha, 0, 132, Short.MAX_VALUE))
+                                    .addComponent(comboJenisUsaha, 0, 132, Short.MAX_VALUE)
+                                    .addComponent(textNomorTelp))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -117,8 +191,8 @@ public class PanelPerusahaan extends javax.swing.JPanel {
                                             .addComponent(labelNomorFax, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                         .addGap(18, 18, 18)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(textKodePos)
-                                            .addComponent(textNomorFax, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)))
+                                            .addComponent(textKodePos, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
+                                            .addComponent(textNomorFax)))
                                     .addComponent(textSumberData)
                                     .addComponent(textJenisUsaha)))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -152,9 +226,9 @@ public class PanelPerusahaan extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelNomorTelp)
-                    .addComponent(textNomorTelp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(labelNomorFax)
-                    .addComponent(textNomorFax, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textNomorFax, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textNomorTelp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelSumberData)
@@ -172,6 +246,16 @@ public class PanelPerusahaan extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void buttonSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSaveActionPerformed
+        // TODO add your handling code here:
+        controller.inputPerusahaan(this);
+    }//GEN-LAST:event_buttonSaveActionPerformed
+
+    private void buttonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCancelActionPerformed
+        // TODO add your handling code here:
+        controller.cancel(this);
+    }//GEN-LAST:event_buttonCancelActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -195,8 +279,8 @@ public class PanelPerusahaan extends javax.swing.JPanel {
     private javax.swing.JTextField textKodePos;
     private javax.swing.JTextField textKota;
     private javax.swing.JTextField textNamaPerusahaan;
-    private javax.swing.JTextField textNomorFax;
-    private javax.swing.JTextField textNomorTelp;
+    private javax.swing.JFormattedTextField textNomorFax;
+    private javax.swing.JFormattedTextField textNomorTelp;
     private javax.swing.JTextField textSumberData;
     // End of variables declaration//GEN-END:variables
 }

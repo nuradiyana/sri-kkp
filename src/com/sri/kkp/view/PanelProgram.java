@@ -6,17 +6,36 @@
 
 package com.sri.kkp.view;
 
+import com.sri.kkp.contoller.ProgramController;
+import javax.swing.JComboBox;
+import javax.swing.JTextField;
+
 /**
  *
  * @author KNO1300457
  */
 public class PanelProgram extends javax.swing.JPanel {
 
+    private ProgramController controller;
+    
     /**
      * Creates new form PanelPelanggan
      */
     public PanelProgram() {
         initComponents();
+        controller = new ProgramController();
+    }
+
+    public JComboBox getComboSeminar() {
+        return comboSeminar;
+    }
+
+    public JTextField getTextJudulProgram() {
+        return textJudulProgram;
+    }
+
+    public JTextField getTextKodeProgram() {
+        return textKodeProgram;
     }
 
     /**
@@ -32,7 +51,7 @@ public class PanelProgram extends javax.swing.JPanel {
         labelJenisProgram = new javax.swing.JLabel();
         labelJudulProgram = new javax.swing.JLabel();
         textKodeProgram = new javax.swing.JTextField();
-        textJenisProgram = new javax.swing.JTextField();
+        textJudulProgram = new javax.swing.JTextField();
         comboSeminar = new javax.swing.JComboBox();
         buttonSave = new javax.swing.JButton();
         buttonCancel = new javax.swing.JButton();
@@ -51,14 +70,24 @@ public class PanelProgram extends javax.swing.JPanel {
 
         textKodeProgram.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
-        textJenisProgram.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        textJudulProgram.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
         comboSeminar.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         comboSeminar.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SEMINAR", "TRAINING" }));
 
         buttonSave.setText("Save");
+        buttonSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonSaveActionPerformed(evt);
+            }
+        });
 
         buttonCancel.setText("Cancel");
+        buttonCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonCancelActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -74,7 +103,7 @@ public class PanelProgram extends javax.swing.JPanel {
                             .addComponent(labelJudulProgram, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(textJenisProgram)
+                            .addComponent(textJudulProgram)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(textKodeProgram, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE)
@@ -101,7 +130,7 @@ public class PanelProgram extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelJudulProgram)
-                    .addComponent(textJenisProgram, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textJudulProgram, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonSave)
@@ -109,6 +138,16 @@ public class PanelProgram extends javax.swing.JPanel {
                 .addContainerGap(34, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void buttonSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSaveActionPerformed
+        // TODO add your handling code here:
+        controller.inputProgram(this);
+    }//GEN-LAST:event_buttonSaveActionPerformed
+
+    private void buttonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonCancelActionPerformed
+        // TODO add your handling code here:
+        controller.cancel(this);
+    }//GEN-LAST:event_buttonCancelActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -118,7 +157,7 @@ public class PanelProgram extends javax.swing.JPanel {
     private javax.swing.JLabel labelJenisProgram;
     private javax.swing.JLabel labelJudulProgram;
     private javax.swing.JLabel labelKodeProgram;
-    private javax.swing.JTextField textJenisProgram;
+    private javax.swing.JTextField textJudulProgram;
     private javax.swing.JTextField textKodeProgram;
     // End of variables declaration//GEN-END:variables
 }
