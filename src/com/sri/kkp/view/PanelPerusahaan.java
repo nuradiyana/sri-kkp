@@ -112,25 +112,56 @@ public class PanelPerusahaan extends javax.swing.JPanel {
         textNomorFax = new javax.swing.JFormattedTextField();
         textNomorTelp = new javax.swing.JFormattedTextField();
 
+        labelKodePerusahaan.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelKodePerusahaan.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         labelKodePerusahaan.setText("Kode Perusahaan :");
 
+        labelNamaPerusahaan.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelNamaPerusahaan.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         labelNamaPerusahaan.setText("Nama Perusahaan :");
 
+        labelAlamat.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAlamat.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         labelAlamat.setText("Alamat Perusahaan :");
 
+        labelKota.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelKota.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         labelKota.setText("Kota :");
 
+        labelNomorTelp.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelNomorTelp.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         labelNomorTelp.setText("Nomor Telp. :");
 
+        labelSumberData.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelSumberData.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         labelSumberData.setText("Sumber Data :");
 
+        labelJenisUsaha.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelJenisUsaha.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         labelJenisUsaha.setText("Jenis Usaha :");
 
+        labelKodePos.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelKodePos.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         labelKodePos.setText("Kode Pos :");
 
+        labelNomorFax.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelNomorFax.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         labelNomorFax.setText("Nomor Fax :");
 
+        textKodePerusahaan.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        textNamaPerusahaan.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        textKota.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        textKodePos.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        textSumberData.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
+        textJenisUsaha.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+
         textAreaAlamat.setColumns(20);
+        textAreaAlamat.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         textAreaAlamat.setRows(5);
         jScrollPane1.setViewportView(textAreaAlamat);
 
@@ -153,8 +184,10 @@ public class PanelPerusahaan extends javax.swing.JPanel {
         });
 
         textNomorFax.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        textNomorFax.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
         textNomorTelp.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#0"))));
+        textNomorTelp.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -191,7 +224,7 @@ public class PanelPerusahaan extends javax.swing.JPanel {
                                             .addComponent(labelNomorFax, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                         .addGap(18, 18, 18)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(textKodePos, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
+                                            .addComponent(textKodePos, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
                                             .addComponent(textNomorFax)))
                                     .addComponent(textSumberData)
                                     .addComponent(textJenisUsaha)))))
